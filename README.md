@@ -1,6 +1,6 @@
 # pipeline-template
 
-The starting point for an [AlreadyOpen](https://github.com/AlreadyOpen) pipeline: a GitHub Action that bakes public data and
+The starting point for an [AlreadyOpen](https://github.com/milleleaf) pipeline: a GitHub Action that bakes public data and
 publishes it to a Hugging Face dataset (versioned, for data tools) and bucket (overwritten in place, read by browsers with CORS
 and HTTP Range). Used by hk-transit, hk-buildings and world-skylines; `manifest.py`, `check.py` and `check.yml` are identical in
 all of them, so fix them here and copy them out.

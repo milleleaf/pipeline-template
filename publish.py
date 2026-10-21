@@ -8,7 +8,7 @@ import json, os
 from huggingface_hub import HfApi, batch_bucket_files, create_bucket
 import manifest, sources
 
-REPO = 'alreadyopen/REPLACE-ME'
+REPO = 'milleleaf/REPLACE-ME'
 DATASET_FILES = ['index.json']                                         # e.g. the Parquet files
 BUCKET_FILES = ['index.json']                                          # e.g. the PMTiles, JSON tiles
 KAGGLE = ('helenkwok/REPLACE-ME', 'AlreadyOpen: REPLACE ME')            # mirrored by kaggle_mirror.py (title 6-50 chars)

@@ -9,7 +9,7 @@ tags:
 
 # REPLACE ME
 
-What the dataset holds, one line per file, rebuilt by [AlreadyOpen/REPLACE-ME](https://github.com/AlreadyOpen/REPLACE-ME).
+What the dataset holds, one line per file, rebuilt by [AlreadyOpen/REPLACE-ME](https://github.com/milleleaf/REPLACE-ME).
 `manifest.json` lists every file's sha256, the counts and the sources of the latest bake.
 
 ## Sources and terms
