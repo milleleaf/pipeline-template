@@ -1,6 +1,6 @@
 # pipeline-template
 
-The starting point for an [AlreadyOpen](https://github.com/milleleaf) pipeline: a GitHub Action that bakes public data and
+The starting point for an [Milleleaf](https://github.com/milleleaf) pipeline: a GitHub Action that bakes public data and
 publishes it to a Hugging Face dataset (versioned, for data tools) and bucket (overwritten in place, read by browsers with CORS
 and HTTP Range). Used by hk-transit, hk-buildings and world-skylines; `manifest.py`, `check.py` and `check.yml` are identical in
 all of them, so fix them here and copy them out.
@@ -15,8 +15,8 @@ all of them, so fix them here and copy them out.
 5. `hf/README.md`: the dataset card, crediting every owner in `sources.json` (`check.py` fails otherwise).
 6. `publish.py`: set `KAGGLE` (`helenkwok/<repo>` and a 6-50 character title). The Kaggle mirror takes everything published.
 7. `python check.py`, then set both secrets from their files (never echo a token):
-   `gh secret set HF_TOKEN -R AlreadyOpen/<repo> < "$HOME/Library/Application Support/alreadyopen/hf-write.key"` and
-   `gh secret set KAGGLE_API_TOKEN -R AlreadyOpen/<repo> < "$HOME/.kaggle/access_token"`. Add a schedule to
+   `gh secret set HF_TOKEN -R milleleaf/<repo> < "$HOME/Library/Application Support/alreadyopen/hf-write.key"` and
+   `gh secret set KAGGLE_API_TOKEN -R milleleaf/<repo> < "$HOME/.kaggle/access_token"`. Add a schedule to
    `.github/workflows/bake.yml` and run it once by hand.
 
 ## What comes with it
